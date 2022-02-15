@@ -1,9 +1,9 @@
 package desafio.capgemini.exercicio1;
 
-public class Main {
-	public static void main(String[] args) {
-		// Tamanho da escada
-		int n = 15;
+public class Exercicio1 {
+	
+	// "n" é o número de degraus da escada
+	public Exercicio1(int n) {
 
 		// Possuirá a escada desenhada em caracteres
 		String escada = "";
