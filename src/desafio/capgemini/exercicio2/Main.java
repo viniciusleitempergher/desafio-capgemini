@@ -18,6 +18,8 @@ public class Main {
 		} else {
 			System.out.println("Sua senha possui o mínimo de caracteres!");
 		}
+		
+		sc.close();
 	}
 
 }
