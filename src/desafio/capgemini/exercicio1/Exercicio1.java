@@ -1,11 +1,22 @@
 package desafio.capgemini.exercicio1;
 
-public class Exercicio1 {
-	
-	// "n" È o n˙mero de degraus da escada
-	public Exercicio1(int n) {
+import java.util.Scanner;
 
-		// Possuir· a escada desenhada em caracteres
+public class Exercicio1 {
+	private Scanner sc;
+
+	public Exercicio1() {
+		sc = new Scanner(System.in);
+	}
+
+	// "n" √© o n√∫mero de degraus da escada
+	public void iniciaExercicio() {
+		
+		System.out.println("Exerc√≠cio 1: ");
+		System.out.println("Digite o n√∫mero de degraus: ");
+		int n = sc.nextInt();
+
+		// Possuir√° a escada desenhada em caracteres
 		String escada = "";
 	
 		

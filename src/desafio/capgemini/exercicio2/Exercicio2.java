@@ -1,16 +1,28 @@
 package desafio.capgemini.exercicio2;
 
+import java.util.Scanner;
+
 public class Exercicio2 {
 
-	public Exercicio2(String senha) {
-		
+	Scanner sc;
+
+	public Exercicio2() {
+		sc = new Scanner(System.in);
+	}
+
+	public void iniciaExercicio() {
+		System.out.println("Exerc√≠cio 2: ");
+		System.out.println("Digite uma senha: ");
+
+		String senha = sc.next();
+
 		if (senha.length() < 6) {
-			// N˙mero de caracteres que faltam para a senha possuir 6
+			// N√∫mero de caracteres que faltam para a senha possuir 6
 			int caracteresFaltando = 6 - senha.length();
 			
-			System.out.println("A senha n„o possui o mÌnimo de caracteres, faltam " + caracteresFaltando + "!");
+			System.out.println("A senha n√£o possui o m√≠nimo de caracteres, faltam " + caracteresFaltando + "!");
 		} else {
-			System.out.println("Sua senha possui o mÌnimo de caracteres!");
+			System.out.println("Sua senha possui o m√≠nimo de caracteres!");
 		}
 	}
 
